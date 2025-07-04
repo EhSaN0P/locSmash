@@ -387,5 +387,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     checkValidity();
+
+
+
+$(".finishFormBTN").click(()=>{
+                window.location.href = "../landing_page/LandingPage.html"
+
+})
+
+
 });
 
