@@ -298,54 +298,7 @@ document.getElementById('tab2next').addEventListener('click', function(e) {
     }
 });
 
-function checkPasswordStrength(password) {
-    let strength = 0;
-    if (password.length >= 8) strength++;
-    if (password.match(/[a-z]+/)) strength++;
-    if (password.match(/[A-Z]+/)) strength++;
-    if (password.match(/[0-9]+/)) strength++;
-    if (password.match(/[$@#&!]+/)) strength++;
-    return strength;
-}
 
-document.getElementById('Passinput').addEventListener('input', function(e) {
-    const strength = checkPasswordStrength(e.target.value);
-    const colors = ['#ff4444', '#ffbb33', '#00C851', '#33b5e5', '#2BBBAD'];
-    this.style.borderColor = colors[strength - 1] || '#ff4444';
-});
-
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-const validateEmail = debounce((email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        showNotification('Please enter a valid email address', 'error');
-    }
-}, 1000);
-
-document.getElementById('Emailinput').addEventListener('input', (e) => {
-    validateEmail(e.target.value);
-});
-
-// بهبود Submit Form
-
-// اضافه کردن Smooth Scroll برای تغییر تب‌ها
-function smoothScrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
 
 document.querySelectorAll('#tab1next, #tab2next, .back-btn').forEach(btn => {
     btn.addEventListener('click', smoothScrollToTop);
@@ -391,7 +344,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 $(".finishFormBTN").click(()=>{
-                window.location.href = "../landing_page/LandingPage.html"
+                window.location.href = "https://ehsan0p.github.io/locSmash/pages/landing_page/LandingPage.html"
 
 })
 

@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'vazirmatn';
-    src: url('../node_modules/vazirmatn/fonts/ttf/Vazirmatn-Bold.ttf');
+    src: url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
 
 }
 :root {
