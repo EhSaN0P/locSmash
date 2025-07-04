@@ -1,0 +1,163 @@
+
+.custom-modal {
+    position: fixed;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+.custom-modal-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    color: var(--text-light);
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background: transparent;
+    color: var(--text-light);
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+}
+
+.list-group li {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 0.7rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-light);
+    font-weight: 600;
+    backdrop-filter: blur(6px);
+}
+
+.list-group li button {
+    background: #dc3545;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.list-group li button:hover {
+    background: #b02a37;
+}
+h2 {
+    text-align: center;
+    color: #ffc107;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    user-select: none;
+    position: relative;
+}
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    margin: 10px auto 0;
+    background: linear-gradient(90deg, #ffc107, #ffea00);
+    border-radius: 4px;
+    box-shadow: 0 0 12px #ffc107;
+}
+
+/* شبکه کارت‌ها */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 25px;
+    max-width: 100%;
+    padding: 2rem !important;}
+
+/* کارت‌ها */
+.category-card {
+    background: #ffffffcc;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0 10px 25px rgba(2, 136, 209, 0.15);
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #084a6e;
+    font-weight: 700;
+    font-size: 1.1rem;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.7s ease forwards;
+    opacity: 0;
+}
+
+/* انیمیشن ورود با تأخیر برای کارت‌ها */
+.category-card:nth-child(1) { animation-delay: 0.05s; }
+.category-card:nth-child(2) { animation-delay: 0.10s; }
+.category-card:nth-child(3) { animation-delay: 0.15s; }
+.category-card:nth-child(4) { animation-delay: 0.20s; }
+.category-card:nth-child(5) { animation-delay: 0.25s; }
+.category-card:nth-child(6) { animation-delay: 0.30s; }
+.category-card:nth-child(7) { animation-delay: 0.35s; }
+.category-card:nth-child(8) { animation-delay: 0.40s; }
+.category-card:nth-child(9) { animation-delay: 0.45s; }
+.category-card:nth-child(10) { animation-delay: 0.50s; }
+.category-card:nth-child(11) { animation-delay: 0.55s; }
+.category-card:nth-child(12) { animation-delay: 0.60s; }
+.category-card:nth-child(13) { animation-delay: 0.65s; }
+.category-card:nth-child(14) { animation-delay: 0.70s; }
+.category-card:nth-child(15) { animation-delay: 0.75s; }
+.category-card:nth-child(16) { animation-delay: 0.80s; }
+.category-card:nth-child(17) { animation-delay: 0.85s; }
+.category-card:nth-child(18) { animation-delay: 0.90s; }
+.category-card:nth-child(19) { animation-delay: 0.95s; }
+.category-card:nth-child(20) { animation-delay: 1.00s; }
+/* ادامه به صورت مشابه می‌تونه اضافه بشه برای ۱۰۰ کارت */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .category-card {
+        font-size: 1rem;
+    }
+    .category-card i {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 480px) {
+    .categories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .category-card i {
+        font-size: 2.5rem;
+    }
+}

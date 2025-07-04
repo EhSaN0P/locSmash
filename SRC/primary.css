@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'vazirmatn';
+    src: url('../node_modules/vazirmatn/fonts/ttf/Vazirmatn-Bold.ttf');
+
+}
+:root {
+    --primary-dark: #073642;
+    --primary-mid: #0a9396;
+    --primary-light: #94d2bd;
+    --accent-yellow: #ee9b00;
+    --text-dark: #001219;
+    --text-light: #ffffff;
+}
+
+
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-mid));
+    color: var(--text-light);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+body::selection{
+    background: transparent;
+    user-select: none;
+}
+
+/* Navbar */
+nav.navbar {
+    background: rgba(0, 18, 25, 0.85);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.navbar-brand {
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: var(--accent-yellow);
+    letter-spacing: 0.1em;
+    user-select: none;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05) ;
+    color: #ffb703;
+}
+
+.nav-link {
+    color: var(--text-light);
+    position: relative;
+    transition: color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--accent-yellow);
+    transition: width 0.3s ease;
+    border-radius: 1px;
+}
+
+.nav-link:hover {
+    color: var(--accent-yellow);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+.categoryLink{
+    font-size: 1.2rem;
+    text-shadow: 0 0 3px;
+}
+
+
+
+
+
+
+
+/* ---------- Staggered Animation Delay ---------- */
+.category-card:nth-child(1) { animation-delay: 0.1s; }
+.category-card:nth-child(2) { animation-delay: 0.2s; }
+.category-card:nth-child(3) { animation-delay: 0.3s; }
+.category-card:nth-child(4) { animation-delay: 0.4s; }
+.category-card:nth-child(5) { animation-delay: 0.5s; }
+.category-card:nth-child(6) { animation-delay: 0.6s; }
+.category-card:nth-child(7) { animation-delay: 0.7s; }
+.category-card:nth-child(8) { animation-delay: 0.8s; }
+.category-card:nth-child(9) { animation-delay: 0.9s; }
+.category-card:nth-child(10) { animation-delay: 1s; }
+.category-card:nth-child(11) { animation-delay: 1.1s; }
+.category-card:nth-child(12) { animation-delay: 1.2s; }
+.category-card:nth-child(13) { animation-delay: 1.3s; }
+.category-card:nth-child(14) { animation-delay: 1.4s; }
+.category-card:nth-child(15) { animation-delay: 1.5s; }
+.category-card:nth-child(16) { animation-delay: 1.6s; }
+.category-card:nth-child(17) { animation-delay: 1.7s; }
+.category-card:nth-child(18) { animation-delay: 1.8s; }
+.category-card:nth-child(19) { animation-delay: 1.9s; }
+.category-card:nth-child(20) { animation-delay: 2s; }
+.category-card:nth-child(21) { animation-delay: 2.1s; }
+.category-card:nth-child(22) { animation-delay: 2.2s; }
+.category-card:nth-child(23) { animation-delay: 2.3s; }
+.category-card:nth-child(24) { animation-delay: 2.4s; }
+.category-card:nth-child(25) { animation-delay: 2.5s; }
+.category-card:nth-child(26) { animation-delay: 2.6s; }
+.category-card:nth-child(27) { animation-delay: 2.7s; }
+.category-card:nth-child(28) { animation-delay: 2.8s; }
+.category-card:nth-child(29) { animation-delay: 2.9s; }
+.category-card:nth-child(30) { animation-delay: 3s; }
+.category-card:nth-child(31) { animation-delay: 3.1s; }
+.category-card:nth-child(32) { animation-delay: 3.2s; }
+.category-card:nth-child(33) { animation-delay: 3.3s; }
+.category-card:nth-child(34) { animation-delay: 3.4s; }
+.category-card:nth-child(35) { animation-delay: 3.5s; }
+.category-card:nth-child(36) { animation-delay: 3.6s; }
+.category-card:nth-child(37) { animation-delay: 3.7s; }
+.category-card:nth-child(38) { animation-delay: 3.8s; }
+.category-card:nth-child(39) { animation-delay: 3.9s; }
+.category-card:nth-child(40) { animation-delay: 4s; }
+.category-card:nth-child(41) { animation-delay: 4.1s; }
+.category-card:nth-child(42) { animation-delay: 4.2s; }
+.category-card:nth-child(43) { animation-delay: 4.3s; }
+.category-card:nth-child(44) { animation-delay: 4.4s; }
+.category-card:nth-child(45) { animation-delay: 4.5s; }
+.category-card:nth-child(46) { animation-delay: 4.6s; }
+.category-card:nth-child(47) { animation-delay: 4.7s; }
+.category-card:nth-child(48) { animation-delay: 4.8s; }
+.category-card:nth-child(49) { animation-delay: 4.9s; }
+.category-card:nth-child(50) { animation-delay: 5s; }
+.category-card:nth-child(51) { animation-delay: 5.1s; }
+.category-card:nth-child(52) { animation-delay: 5.2s; }
+.category-card:nth-child(53) { animation-delay: 5.3s; }
+.category-card:nth-child(54) { animation-delay: 5.4s; }
+.category-card:nth-child(55) { animation-delay: 5.5s; }
+.category-card:nth-child(56) { animation-delay: 5.6s; }
+.category-card:nth-child(57) { animation-delay: 5.7s; }
+.category-card:nth-child(58) { animation-delay: 5.8s; }
+.category-card:nth-child(59) { animation-delay: 5.9s; }
+.category-card:nth-child(60) { animation-delay: 6s; }
+.category-card:nth-child(61) { animation-delay: 6.1s; }
+.category-card:nth-child(62) { animation-delay: 6.2s; }
+.category-card:nth-child(63) { animation-delay: 6.3s; }
+.category-card:nth-child(64) { animation-delay: 6.4s; }
+.category-card:nth-child(65) { animation-delay: 6.5s; }
+.category-card:nth-child(66) { animation-delay: 6.6s; }
+.category-card:nth-child(67) { animation-delay: 6.7s; }
+.category-card:nth-child(68) { animation-delay: 6.8s; }
+.category-card:nth-child(69) { animation-delay: 6.9s; }
+.category-card:nth-child(70) { animation-delay: 7s; }
+.category-card:nth-child(71) { animation-delay: 7.1s; }
+.category-card:nth-child(72) { animation-delay: 7.2s; }
+.category-card:nth-child(73) { animation-delay: 7.3s; }
+.category-card:nth-child(74) { animation-delay: 7.4s; }
+.category-card:nth-child(75) { animation-delay: 7.5s; }
+.category-card:nth-child(76) { animation-delay: 7.6s; }
+.category-card:nth-child(77) { animation-delay: 7.7s; }
+.category-card:nth-child(78) { animation-delay: 7.8s; }
+.category-card:nth-child(79) { animation-delay: 7.9s; }
+.category-card:nth-child(80) { animation-delay: 8s; }
+.category-card:nth-child(81) { animation-delay: 8.1s; }
+.category-card:nth-child(82) { animation-delay: 8.2s; }
+.category-card:nth-child(83) { animation-delay: 8.3s; }
+.category-card:nth-child(84) { animation-delay: 8.4s; }
+.category-card:nth-child(85) { animation-delay: 8.5s; }
+.category-card:nth-child(86) { animation-delay: 8.6s; }
+.category-card:nth-child(87) { animation-delay: 8.7s; }
+.category-card:nth-child(88) { animation-delay: 8.8s; }
+.category-card:nth-child(89) { animation-delay: 8.9s; }
+.category-card:nth-child(90) { animation-delay: 9s; }
+.category-card:nth-child(91) { animation-delay: 9.1s; }
+.category-card:nth-child(92) { animation-delay: 9.2s; }
+.category-card:nth-child(93) { animation-delay: 9.3s; }
+.category-card:nth-child(94) { animation-delay: 9.4s; }
+.category-card:nth-child(95) { animation-delay: 9.5s; }
+.category-card:nth-child(96) { animation-delay: 9.6s; }
+.category-card:nth-child(97) { animation-delay: 9.7s; }
+.category-card:nth-child(98) { animation-delay: 9.8s; }
+.category-card:nth-child(99) { animation-delay: 9.9s; }
+.category-card:nth-child(100) { animation-delay: 10s; }
