@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>LocSmash</title>
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="../../node-modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node-modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../SRC/primary.css">
+    <link rel="stylesheet" href="../../css/landing_page/LandingPage.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark px-4">
+    <!-- منوی بازشو و پروفایل در موبایل -->
+
+    <div class="d-flex align-items-center d-lg-none">
+        <button class="navbar-toggler no-border p-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="نمایش/پنهان منو">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a  href="../user_Registration_page/user_Registration.html" class="text-white mx-4 mt-1">
+            <i class="fas fa-user fa-lg"></i>
+        </a>
+    </div>
+
+    <a class="navbar-brand animate__animated animate__infinite mob" href="#">MadiHub</a>
+
+
+    <!-- منوی اصلی -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav gap-4">
+            <a class="nav-link categoryLink" href="../all_category_page/all_category_page.html">دسته بندی ها</a>
+            <a class="nav-link" href="#">لوک اسمش چیست؟</a>
+            <a class="nav-link" href="../bussinessRegistration_page/bussinessRegistration.html">ثبت بیزینس</a>
+            <!-- پروفایل فقط در دسکتاپ -->
+            <a class="nav-link d-none d-lg-block" href="../user_Registration_page/user_Registration.html">پروفایل</a>
+        </div>
+    </div>
+
+    <a class="navbar-brand animate__animated animate__infinite des" href="#">MadiHub</a>
+</nav>
+
+
+<!-- دو باکس معرفی -->
+<!-- اسلایدر موبایل بدون دکمه و با تاچ و تایمر خودکار -->
+<div class="container my-5">
+    <div id="highlightCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel" data-bs-interval="5000" data-bs-touch="true">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="highlight-box animate__animated animate__fadeInLeft">
+                    <h5>می‌خوای بیزینست دیده شه؟</h5>
+                    <p>در کمتر از ۵ دقیقه بیزینس خودتو ثبت کن و برای دیده شدن رقابت کن</p>
+                    <button class="btn btn-primary-custom">
+                        <a class="text-decoration-none text-light" href="../bussinessRegistration_page/bussinessRegistration.html">ثبت بیزینس</a>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="highlight-box animate__animated animate__fadeInRight" style="background: rgba(238, 155, 0, 0.9); color: var(--text-dark); box-shadow: 0 12px 35px rgba(238 155 0 / 0.5);">
+                    <h5 class="text-light">نظرت خیلی مهمه!</h5>
+                    <p class="text-light">همین الان ثبت نام کن و بیزینس ها رو بررسی کن و بهشون نمره بده</p>
+                    <button class="btn btn-outline-light-custom">
+                        <a class="text-decoration-none text-light" href="../user_Registration_page/user_Registration.html">ورود / ثبت نام</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- نسخه دسکتاپ -->
+    <div class="row g-4 d-none d-md-flex">
+        <div class="col-md-6">
+            <div class="highlight-box">
+                <h5>می‌خوای بیزینست دیده شه؟</h5>
+                <p>در کمتر از ۵ دقیقه بیزینس خودتو ثبت کن و برای دیده شدن رقابت کن</p>
+                <button class="btn btn-primary-custom">
+                    <a class="text-decoration-none text-light" href="../bussinessRegistration_page/bussinessRegistration.html">ثبت بیزینس</a>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="highlight-box" style="background: rgba(238, 155, 0, 0.9); color: var(--text-dark); box-shadow: 0 12px 35px rgba(238 155 0 / 0.5);">
+                <h5 class="text-light">نظرت خیلی مهمه!</h5>
+                <p class="text-light">همین الان ثبت نام کن و بیزینس ها رو بررسی کن و بهشون نمره بده</p>
+                <button class="btn btn-outline-light-custom">
+                    <a class="text-decoration-none text-light" href="../user_Registration_page/user_Registration.html">ورود / ثبت نام</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- دسته بندی ها -->
+<section class="col-lg-8 col-sm-10  mx-auto my-5  ">
+    <h2 class="category-title section-title animate__animated animate__fadeInDown">
+        دسته بندی ها
+        <span class="dot-yellow"></span>
+    </h2>
+    <div class="categories-grid p-5" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 20px;">
+
+        <a href="../rating_page/rating.html">
+            <div class="category-card">
+                <div class="icon-container"><i class="fa fa-hospital"></i></div>
+                <span>دندان پزشکی</span>
+            </div>
+        </a>
+
+        <a href="../rating_page/rating.html">
+        <div class="category-card">
+            <div class="icon-container"><i class="fa fa-university"></i></div>
+            <span>بانک</span>
+        </div>
+        </a>
+
+        <a href="../rating_page/rating.html">
+        <div class="category-card">
+            <div class="icon-container"><i class="fa fa-coffee"></i></div>
+            <span>کافی شاپ</span>
+        </div>
+        </a>
+
+        <a href="../rating_page/rating.html">
+
+        <div class="category-card">
+            <div class="icon-container"><i class="fa fa-utensils"></i></div>
+            <span>غذا</span>
+        </div>
+        </a>
+
+        <a href="../rating_page/rating.html">
+
+        <div class="category-card">
+            <div class="icon-container"><i class="fa fa-hotel"></i></div>
+            <span>هتل</span>
+        </div>
+        </a>
+
+        <a href="../rating_page/rating.html">
+
+        <div class="category-card">
+            <div class="icon-container"><i class="fa fa-book"></i></div>
+            <span>کتابخانه</span>
+        </div>
+        </a>
+
+        <a href="../rating_page/rating.html">
+
+        <div class="category-card">
+            <div class="icon-container"><i class="fa fa-tree"></i></div>
+            <span>پارک</span>
+        </div>
+        </a>
+
+        <a href="../rating_page/rating.html">
+
+        <div class="category-card">
+            <div class="icon-container"><i class="fa fa-shopping-bag"></i></div>
+            <span>مرکز خرید</span>
+        </div>
+        </a>
+
+        <a href="../rating_page/rating.html">
+
+        <div class="category-card">
+            <div class="icon-container"><i class="fa-solid fa-dumbbell"></i></div>
+            <span>باشگاه بدنسازی</span>
+        </div>
+        </a>
+
+        <a href="../rating_page/rating.html">
+
+        <div class="category-card">
+            <div class="icon-container"><i class="fa-solid fa-stethoscope"></i></div>
+            <span>پزشکی</span>
+        </div>
+        </a>
+
+        <a href="../rating_page/rating.html">
+
+        <div class="category-card">
+            <div class="icon-container"><i class="fa-solid fa-wrench"></i></div>
+            <span>ابزار</span>
+        </div>
+        </a>
+
+        <a href="../rating_page/rating.html">
+
+        <div class="category-card">
+            <div class="icon-container"><i class="fa-solid fa-chalkboard"></i></div>
+            <span>آموزش</span>
+        </div>
+        </a>
+
+
+        <a href="../all_category_page/all_category_page.html" style="text-decoration: none;">
+            <div class="category-card">
+                <div class="icon-container"><i class="fa">...</i></div>
+                <span>بیشتر</span>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+
+
+<!-- محبوب ترین ها -->
+<section class="container mb-5">
+    <h2 class="category-title animate__animated animate__fadeInDown">محبوب‌ترین‌ها</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col ">
+            <div class="popular-card animate__animated animate__fadeInUp " >
+                بهترین دندان پزشکان تهران
+            </div>
+        </div>
+        <div class="col">
+            <div class="popular-card animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+                بانک‌های با بهترین خدمات مشتری
+            </div>
+        </div>
+        <div class="col">
+            <div class="popular-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                رستوران‌های برتر شهر
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-dark  py-4" style=" user-select:none;">
+    © 2025 LocSmash | همه حقوق محفوظ است
+</footer>
+
+
+
+
+    <script src="../../node-modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../node-modules/jquery/dist/jquery.js"></script>
+    <script src="../../SRC/primary.js"></script>
+    <script>
+        window.addEventListener('wheel', function(e) {
+            if (e.ctrlKey) e.preventDefault();
+        }, { passive: false });
+
+        window.addEventListener('touchstart', function(e) {
+            if (e.touches.length > 1) e.preventDefault();
+        }, { passive: false });
+
+        window.addEventListener('gesturestart', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

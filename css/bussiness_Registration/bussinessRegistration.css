@@ -1,0 +1,1076 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Vazirmatn', sans-serif;
+
+}
+.userNumber {
+    width: 500px;
+    height: 350px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.userNumber:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.form-header {
+    margin-bottom: 2rem;
+}
+
+.locSmash-Brand-Name {
+    color: #0e6c75;
+    font-size: 1.8rem;
+    text-shadow: 0 0 1px #0a5157;
+    transition: 0.3s;
+}
+
+.locSmash-Brand-Name:hover {
+    color: #4cb8c4;
+    text-shadow: 0 0 8px #99d8e1;
+}
+
+.form-Action-Page {
+    font-size: 1.6rem;
+    color: #555;
+    font-weight: bolder;
+}
+
+.custom-label {
+    display: block;
+    font-size: 1rem;
+    color: #2a4e52;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.custom-input {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 999px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #b5d8de;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.custom-input:focus {
+    outline: none;
+    border-color: #4cb8c4;
+    box-shadow: 0 0 0 3px rgba(76, 184, 196, 0.25);
+}
+
+.custom-btn {
+    background-color: #0e6c75;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 999px;
+    width: 80%;
+    box-shadow: 0 5px 10px rgba(1, 17, 19, 0.98);
+    transition: 0.3s;
+    font-weight: bolder;
+}
+
+.custom-btn:hover,.custom-btn:active {
+    background-color: #227880 !important;
+    box-shadow: 0 2px 5px rgba(1, 17, 19, 0.98);
+}
+
+.accept-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+.text-primary {
+    color: #0e6c75;
+    font-weight: bold;
+}
+
+
+
+.multi-step-form {
+
+    padding: 2rem;
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.step {
+    display: none;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+.step.active {
+    display: block;
+}
+
+input.form-control {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+img.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+#errorAlert {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050; /* برای نمایش روی سایر عناصر */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+
+    animation-duration: 1s !important;
+}
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: fadeIn;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    flex: 1;
+}
+.login-box h1 {
+    color: #086e74;
+}
+
+
+
+
+
+.sign-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    direction: rtl;
+
+}
+.sign-input a {
+    width: 70%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(to right, #ffffff, #f5fff1);
+    color: #098c90;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 5px rgb(10, 138, 142);
+    border: 2px solid #2b9b9e;
+}
+
+
+.finishFormBTN{
+    width: 70%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(to right, #0a878b, #073d47);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 2px 10px rgb(8, 62, 72);
+}
+
+.sign-input a:hover, .finishFormBTN:hover {
+    box-shadow: 0 5px 15px rgb(8, 101, 109);
+    background: #0a8b8f !important;
+    color: #c8e0e4 !important;
+    border: 2px solid rgba(9, 65, 73, 0.16) !important;
+
+}
+
+
+
+*:focus {
+    outline: none;
+}
+@keyframes show {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+.progress-tabs{
+    width: 70%;
+    height: 20vh;
+    border-radius: 15px;
+    padding: 2rem;
+    position: relative;
+
+}
+
+progress{
+    width: 100%;
+    height: 8px;
+    border-radius: 12px !important;
+    transition: 1500ms;
+    position: relative;
+}
+
+progress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+    rgba(115, 205, 90, 0.2) 0%,
+    rgba(43, 226, 107, 0.2) 100%
+    );
+    border-radius: 12px;
+}
+
+progress::-webkit-progress-bar{
+    background-color: rgba(0, 255, 255, 0) !important;
+    border-radius: 12px !important;
+    box-shadow: inset 0 0 5px;
+    transition: 1500ms;
+
+
+}
+
+
+progress::-webkit-progress-value{
+    background: linear-gradient(
+            to right,
+            #60c66d,
+            #00f40e
+    );
+    border-radius: 12px !important;
+    transition: 1500ms;
+
+
+}
+
+.tab .form-label{
+    color: black;
+    font-weight: bolder;
+}
+
+.steps{
+    width: 3rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 2px solid #5acd60;
+    border-radius: 22px;
+    padding: 8px;
+    background-color: white;
+    top: 1.3rem;
+    box-shadow: 0 0 10px rgba(90, 205, 100, 0.3);
+    transition: all 0.4s ease;
+    color: black;
+    font-weight: bolder;
+}
+
+.steps.completed {
+    background-color: #0d8017;
+    border-color: #179730;
+}
+
+.steps.completed img {
+    filter: brightness(0) invert(1);
+}
+
+.steps img{
+    width: 100%;
+    border-radius: 22px;
+
+}
+
+
+.step2{
+    left: 48%;
+}
+
+.step3{
+    left: 95%;
+}
+
+
+
+.curentStep{
+
+    box-shadow: 0 0 20px rgba(98, 205, 90, 0.4);
+    transform: scale(1.15);
+    transition: 700ms;
+
+
+}
+
+
+
+
+/***** tabs *****/
+.tabb{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 50vh;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(54, 47, 94, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+/***** End tabs *****/
+
+.tabb:hover{
+    box-shadow: 0 8px 25px rgba(54, 47, 94, 0.15);
+}
+
+.showStepName{
+    color: #ffffff;
+    position: absolute;
+    bottom: -2rem;
+    text-wrap: nowrap;
+
+}
+
+
+
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+    direction: ltr;
+}
+
+.single-button {
+    justify-content: center;
+}
+
+.single-button a {
+    width: 20% !important;
+}
+
+
+.back-btn {
+    width: 35% !important;
+    background: transparent !important;
+    border: 2px solid #0a8b8f !important;
+    color: #0a8d91 !important;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    height: fit-content;
+
+}
+
+
+#tab1next, #tab2next {
+    width: 35% !important;
+    height: fit-content;
+}
+
+.tabb {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.animate__zoomOutLeft {
+    animation: zoomOutLeft 0.5s ease-out forwards;
+}
+
+.animate__zoomInLeft {
+    animation: zoomInLeft 0.5s ease-out forwards;
+}
+
+.progress-tabs .steps {
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-tabs .steps:hover {
+    transform: scale(1.1);
+}
+
+.progress-tabs .steps img {
+    transition: all 0.3s ease;
+    animation-play-state: paused;
+}
+
+.progress-tabs .curentStep img {
+    animation: pulse 1.5s infinite;
+}
+
+.divINP {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.divINP input:not([type="range"]) {
+    padding-right: 40px;
+}
+
+.divINP::after {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+
+/* انیمیشن‌های جدید */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomOutLeft {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.3) translateX(-100%);
+    }
+}
+
+@keyframes zoomInLeft {
+    from {
+        opacity: 0;
+        transform: scale(0.3) translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.notification-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.notification {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: slideIn 0.5s ease forwards;
+    transform: translateX(120%);
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.notification.error {
+    border-left: 4px solid #ff4444;
+}
+
+.notification.success {
+    border-left: 4px solid #00C851;
+}
+
+.notification-icon {
+    font-size: 20px;
+    color: #6a5acd;
+}
+
+.notification-message {
+    color: #333;
+    font-size: 14px;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    to {
+        transform: translateX(120%);
+        opacity: 0;
+    }
+}
+
+.button-loading {
+    position: relative;
+    pointer-events: none;
+}
+
+#tab3{
+    padding: 2rem;
+}
+.button-loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.tabb section{
+    width: 100% ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.tabb input,.tabb select,.tabb textarea {
+    text-align: right !important;
+}
+
+
+.tabb .form-group{
+    width: 45%;
+    height: 3vh;
+}
+
+.tabb select{
+    height:5vh;
+    outline:2px solid rgba(29, 149, 10, 0.29) !important;
+
+}
+
+.tabb section label ,.tabb textarea{
+    color: black;
+    font-weight: bolder;
+    text-align: end;
+
+}
+/* فقط همون input یا select که invalid هست قرمز و پس‌زمینه هشدار */
+.tabb textarea:required:invalid,
+.tabb input:required:invalid,
+.tabb select:required:invalid {
+    outline: 2px solid rgba(253, 0, 0, 0.7) !important;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.login-box:has(textarea:required:invalid) .finishFormBTN,
+.login-box:has(input:required:invalid) .finishFormBTN,
+.login-box:has(select:required:invalid) .finishFormBTN {
+    background: linear-gradient(to right, #8b0a0a, #470707);
+    box-shadow: 0 0 5px;
+    user-select: none;
+    cursor: not-allowed;
+    margin-left: 0.2rem;
+    transition: 0.3s;
+}
+.login-box:has(textarea:required:invalid) .finishFormBTN:hover,
+.login-box:has(input:required:invalid) .finishFormBTN:hover,
+.login-box:has(select:required:invalid) .finishFormBTN:hover {
+    background: linear-gradient(to right, #8b0a0a, #470707) !important;
+    cursor: not-allowed;
+    box-shadow: 0 0 5px #530303;
+}
+
+/* وقتی input یا select معتبر شد استایل عادی */
+textarea:required:valid,
+input:required:valid,
+select:required:valid {
+    outline: 2px solid rgba(29, 149, 10, 0.7);
+    background-color: white;
+    transition: 0.3s;
+
+}
+select.form-select option {
+    background-color: #f9ffff;
+    color: #0e6c75;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+select.form-select option:hover {
+    background-color: #d6f0f0;
+    color: #086e74;
+}
+
+.tabb input:not(:placeholder-shown){
+    transition: 300ms;
+    outline:2px solid rgba(29, 149, 10, 0.29) !important;
+    background-color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-align: end;
+}
+
+
+.phone-lbl{
+    position: relative;
+}
+
+.phone-lbl:after{
+    content: "(این شماره صرفا برای ارتباط با پشتیبانی می باشد)  ";
+    text-wrap: nowrap;
+    opacity: 0.5;
+    text-align: start;
+    width: 100%;
+    font-size: 0.8rem;
+    bottom: -6rem;
+    right: 1rem;
+    position: absolute;
+}
+
+
+.Support {
+    font-size: 4rem;
+    position: absolute;
+    bottom: 5px;
+    left: 2rem;
+    cursor: pointer;
+}
+.Support a{
+    text-shadow: 0 0 5px #1e9513;
+    color: #00C851;
+}
+.map-con{
+    width: 10vh !important;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#map {
+    width: 200px;
+    height: 200px;
+    /*transform: scale(1.2) translateY(2rem);*/
+    border-radius: 12px;
+    box-shadow: 0 0 5px #051a1c;
+
+}
+.mapInfo{
+    height: 100%;
+    width: 50%;
+    padding: 1rem;
+
+}
+
+
+
+
+.contact-support{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    line-height: 3rem;
+}
+
+
+
+
+.button-group a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent !important;
+    border: 2px solid #0a8b8f !important;
+    color: #0a8d91 !important;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    height: fit-content;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.35);
+}
+
+
+.button-group a:hover{
+
+    box-shadow: 0 0 4px black;
+}
+
+ .submit-map{
+     width: 200px !important;
+ }
+
+
+
+
+
+@media screen and (max-width: 992px) {
+
+    body {
+        flex-direction: column !important;
+        height: auto !important;
+        overflow-y: auto;
+        padding: 1rem;
+    }
+
+    .phone-lbl:after{
+        content: "(این شماره صرفا برای ارتباط با پشتیبانی می باشد)  ";
+        text-wrap: nowrap;
+        opacity: 0.5;
+        text-align: start;
+        width: 100%;
+        font-size: 0.6rem;
+        bottom: 0rem;
+        right: 6rem;
+        position: absolute;
+    }
+
+
+
+    .userNumber,
+    .multi-step-form,
+    .login-box,
+    .tabb,
+    .progress-tabs {
+        width: 100% !important;
+        padding: 1rem !important;
+    }
+
+    .userNumber{
+        transform: scale(1);
+        height: fit-content;
+
+    }
+    .form-select{
+       height: fit-content !important;
+    }
+
+    .form-header, .form-footer {
+        flex-direction: column !important;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .custom-input,
+    .custom-btn {
+        width: 100% !important;
+    }
+
+    .button-group {
+        width: 70% ;
+        gap: 1rem;
+        margin: 50px !important;
+        padding: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .back-btn,
+    #tab1next,
+    #tab2next,
+    .finishFormBTN {
+        width: 100% !important;
+    }
+
+    .tabb section {
+
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 30vh;
+    }
+
+    .tabb .form-group {
+        width: 100% !important;
+    }
+
+    .tabb {
+        height: 64vh;
+    }
+
+    /* 🗺 نقشه */
+    .mapInfo {
+        width: 100% !important;
+    }
+
+
+    .progress-tabs progress {
+
+        transform: translateY(1rem);
+    }
+
+
+    /* پشتیبانی واتساپ */
+    .Support {
+        font-size: 2.5rem;
+        bottom: 10px;
+        left: 10px;
+    }
+    .cs2{
+        text-wrap: nowrap !important;
+        transform: translateY(-4rem) translateX(26rem);
+    }
+
+    .button-group{
+        padding-block: 2rem;
+        display: flex !important;
+        flex-direction: column;
+        transform: translateX(-13rem) translateY(10rem);
+        width: 40% !important;
+    }
+
+    #map{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .tabb {
+        height: 75vh;
+        padding-bottom: 2rem;
+    }
+    .submit-map {
+        display: block !important;
+        margin-top: 1rem;
+        width: 50% !important;
+        height: 3.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        transform: translateX(13rem);
+    }
+
+    #map {
+        display: block;
+        width: 100% !important;
+        height: 250px !important;
+        margin-top: 1rem;
+    }
+
+    .map-con {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabb section.d-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .sign-input{
+        height:80vh !important;
+        padding: 0;
+        gap: 0;
+    }
+    .progress-tabs {
+        display: none;
+
+    }
+
+    .userNumber{
+        transform: scale(1);
+        height: fit-content;
+    }
+
+    .progress-tabs progress {
+
+        display: none;
+    }
+
+    .steps {
+        display: none;
+
+    }
+
+    .form-select{
+        height: 4rem;
+    }
+
+    .tabb{
+        height:80vh !important;
+    }
+
+    .custom-label{
+        padding: 0 !important;
+        font-size: 0.7rem;
+        text-align: center;
+        opacity: 0.5;
+    }
+
+    #address{
+        height: 10vh !important;
+    }
+
+    .contact-support{
+        transform: translateY(0rem);
+    }
+    .button-group{
+        height: fit-content;
+        transform: translateY(0.5rem);
+        z-index: 123;
+    }
+
+    .btg2{
+        transform: translateY(4.5rem);
+    }
+
+    .submit-map{
+        display: none !important;
+    }
+    #map{
+        display: none !important;
+    }
+
+    #tab2 .sign-input {
+        height: fit-content !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+   #address{
+       height: 25vh !important;
+   }
+    #tab3 {
+        height:  fit-content !important;
+        text-align: center;
+    }
+   #tab3 .sign-input{
+       height:  fit-content !important;
+   }
+    #tab3 .sign-input p{
+        margin-top: 3rem;
+    }
+    #tab3 .sign-input .button-group{
+        width: 100% !important;
+    }
+}
+

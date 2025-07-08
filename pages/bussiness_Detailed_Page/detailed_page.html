@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LocSmash</title>
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="../../node-modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node-modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../SRC/primary.css">
+    <link rel="stylesheet" href="../../css/detailed_page/detailedPage.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+<div class="business-box">
+    <div class="top-bar">
+        <button class="btn">←</button>
+        <img src="../../imgs/imgi_136_road220058.jpg">
+        <button class="btn">+</button>
+    </div>
+
+    <div class="business-info mb-1">
+        <div class="d-flex align-items-center gap-2">
+            <div class="logo-box"><img src="../../imgs/imgi_136_road220058.jpg" ></div>
+            <div class="rating-box">9.1/10</div>
+            <span class="text-light">#12</span>
+        </div>
+        <div class="business-title " >نام بیزینس</div>
+    </div>
+
+    <p class="info-text p-3 ">آدرس: آدرس بیزینس ها به صورت کامل</p>
+
+    <!-- Swiper Card Stack Effect -->
+    <div class="swiper mySwiper  ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"  ><img src="../../imgs/imgi_136_road220058.jpg"></div>
+            <div class="swiper-slide"  ><img src="../../imgs/imgi_210_mountains287618_1920.jpg"></div>
+            <div class="swiper-slide"  ><img src="../../imgs/imgi_136_road220058.jpg"></div>
+            <div class="swiper-slide"  ><img src="../../imgs/imgi_210_mountains287618_1920.jpg"></div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="mt-4 px-5">
+        <p class="text-start"><strong>توضیحات:</strong> صاحب بیزینس می‌تونه هر نکته/توضیح/تبلیغاتی اینجا بنویسه.</p>
+    </div>
+
+    <div class="nav-btns p-3">
+        <button class="btn"><a class="text-light text-decoration-none" href="#">موقعیت مکانی</a></button>
+        <button class="btn connectionBtn">راه های ارتباط</button>
+    </div>
+</div>
+
+
+<div class="connection-box p-3">
+    <h2 dir="rtl" class="h2 ">راه های ارتباطی</h2>
+    <section class=" row my-4 ">
+        <img  src="../../icons/Instagram_logo_2016.svg%201.jpg">
+        <p>@locsmah2923</p>
+    </section>
+    <section class=" row my-4">
+        <img  src="../../icons/3ab572be980a04dd90c24011ba0c6d6a-website-www-icon-stroke%201.png">
+        <p>https://www.google.co.uk/</p>
+    </section>
+    <section class=" row my-4">
+        <img  src="../../icons/free-phone-icon-1-thumb%201.png">
+        <p>021-22003223</p>
+    </section>
+    <div class="closeConn">X</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+
+    const swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+</script>
+    <script src="../../node-modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../node-modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../SRC/primary.js"></script>
+    <script src="../../JS/detailed_page.js"></script>
+<script src="../../JS/wow.min.js"></script>
+<script>
+    window.addEventListener('wheel', e => { if (e.ctrlKey) e.preventDefault(); }, { passive: false });
+    window.addEventListener('touchstart', e => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
+    window.addEventListener('gesturestart', e => e.preventDefault());
+</script>
+</body>
+</html>

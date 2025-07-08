@@ -1,0 +1,326 @@
+* {
+    direction: rtl;
+}
+
+.filter-box {
+    background: #34495e; /* رنگ زمینه دارک‌تر آبی-خاکستری */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* سایه تیره‌تر */
+    color: #ecf0f1; /* رنگ متن روشن برای کنتراست */
+    padding: 1rem;
+    border: 1px solid #2c3e50; /* حاشیه ملایم برای برجسته شدن */
+    transition: background-color 0.3s ease;
+}
+
+.filter-box label,
+.filter-box option,
+.filter-box select,
+.filter-box input {
+    color: #ecf0f1;
+}
+
+.filter-box select{
+    color: #000;
+}
+.filter-box input[type="range"] {
+    border-radius: 8px;
+}
+
+.filter-box select option {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+.filter-box button {
+    background-color: #1abc9c;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.filter-box button:hover {
+    background-color: #16a085;
+    cursor: pointer;
+}
+
+
+.business-card {
+    background: var(--card-bg, rgb(198, 216, 219));
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 210, 180, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color, #222);
+}
+
+.business-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 210, 180, 0.34);
+}
+
+/* سه تای اول - رتبه ۱ */
+.rank-1 {
+    background: linear-gradient(to right, #1c1c1c, #000000) !important;
+    border: 2px solid gold;
+    color: gold;
+    box-shadow: 0 0 15px 3px rgba(255, 215, 0, 0.7);
+}
+.rank-1:hover{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.59);
+
+}
+.rank-1 .score-box {
+    background-color: gold;
+    color: black;
+    box-shadow: 0 0 8px gold;
+}
+
+/* رتبه ۲ */
+.rank-2 {
+    background: linear-gradient(to right, #d7d7d7, #f0f0f0) !important;
+    border: 2px solid silver;
+    color: #2c3e50 !important;
+    box-shadow: 0 0 15px 3px rgba(192,192,192, 0.7);
+}
+.rank-2:hover{
+    box-shadow: 0 10px 30px rgb(217, 217, 217);
+
+}
+.rank-2 .score-box {
+    background-color: silver;
+    color: black;
+    box-shadow: 0 0 8px silver;
+}
+
+/* رتبه ۳ */
+.rank-3 {
+    background: linear-gradient(to right, #df9854, #ae6b1a) !important;
+    border: 2px solid #cd7f32;
+    color: #4e342e;
+    box-shadow: 0 0 15px 3px rgba(205,127,50, 0.7);
+}
+.rank-3:hover{
+     box-shadow: 0 10px 30px rgb(204, 135, 63);
+
+ }
+.rank-3 .score-box {
+    background-color: #cd7f32;
+    color: white;
+    box-shadow: 0 0 8px #cd7f32;
+}
+
+/* رتبه های ۴ تا ۱۰ */
+.rank-4to10 {
+    background: #f9f9f9;
+    border: 2px solid #27ae60;
+    color: #27ae60;
+    box-shadow: 0 0 12px 2px rgba(39, 174, 96, 0.4);
+}
+.rank-4to10 .score-box {
+    background-color: #27ae60;
+    color: white;
+    box-shadow: 0 0 6px #27ae60;
+}
+
+/* کارت‌های معمولی (۱۱ به بعد) */
+.business-card {
+    background: var(--card-bg, #2c3e50);
+    color: var(--text-color, #ecf0f1);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 210, 180, 0.05);
+}
+
+/* آیکون‌های رتبه */
+.rank-icon {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.rank-1 .rank-icon { color: #b39b18; }
+.rank-2 .rank-icon { color: #918e8e; }
+.rank-3 .rank-icon { color: #703d08; }
+
+/* لوگو */
+.logo-box {
+    background: #95a5a6;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* امتیاز */
+.score-box {
+    min-width: 60px;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #27ae60;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.2rem 0.5rem;
+}
+
+/* بخش توضیحات بیشتر */
+.more-info {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    max-width: 300px;
+    text-align: right;
+}
+
+.category-title{
+    text-shadow: 0 0 5px #34485d;
+}
+
+/* واکنش‌گرا */
+@media (max-width: 600px) {
+    .business-card {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.5rem;
+    }
+}
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(20px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.business-card.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+.business-card.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+
+.business-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 210, 180, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 1rem;
+    position: relative;
+}
+
+/* چیدمان منظم محتوا */
+.business-card .rank-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.business-card .rank-text {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    transform: translateY(0.5rem);
+}
+
+.business-card .logo-box {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.business-card .text-end {
+    flex-grow: 1;
+    min-width: 150px;
+    text-align: right;
+}
+
+.business-card .score-box {
+    min-width: 60px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+/* ریسپانسیو برای تبلت و موبایل */
+@media (max-width: 992px) {
+    .business-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.8rem;
+    }
+    .business-card .rank-icon,
+    .business-card .rank-text,
+    .business-card .logo-box,
+    .business-card .score-box {
+        order: initial;
+    }
+}
+
+@media (max-width: 600px) {
+    .business-card {
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        padding: 0.6rem;
+    }
+
+    .business-card .text-end {
+        width: 100%;
+        text-align: right;
+    }
+
+    .business-card .rank-wrapper {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .business-card .rank-icon,
+    .business-card .rank-text {
+        position: static;
+        margin: 0;
+    }
+
+    .business-card .logo-box {
+        width: 45px;
+        height: 45px;
+        font-size: 0.8rem;
+    }
+
+    .business-card .score-box {
+        min-width: 50px;
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+    }
+}
+
+/* فاصله‌دهی دقیق‌تر */
+.business-card .rank-icon { margin-left: 8px; }
+.business-card .rank-text { margin-left: 8px; }
+.business-card .logo-box { margin-left: 8px; }
