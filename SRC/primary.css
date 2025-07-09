@@ -6,8 +6,8 @@
 :root {
     /*--primary-dark: #073642;*/
     /*--primary-mid: #0a9396;*/
-    --primary-dark: #b7d0d5;
-    --primary-mid: #8cacae;
+    --primary-dark: #ffffff;
+    --primary-mid: #ced8d8;
     --primary-light: #94d2bd;
     --accent-yellow: #ee9b00;
     --text-dark: #001219;
@@ -33,10 +33,15 @@ body::selection{
 
 /* Navbar */
 nav.navbar {
-    background: rgba(0, 18, 25, 0.85);
+    background: rgba(250, 250, 250, 0.85);
     backdrop-filter: blur(12px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.42);
+
 }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(8,70,81, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 
 .navbar-brand {
     font-weight: 900;
@@ -44,16 +49,21 @@ nav.navbar {
     color: var(--accent-yellow);
     letter-spacing: 0.1em;
     user-select: none;
-    transition: transform 0.3s ease;
+    transition: 500ms;
+    text-shadow: 0 0 2px #000000;
 }
+
 
 .navbar-brand:hover {
     transform: scale(1.05) ;
-    color: #ffb703;
+    color: #e3ad33;
+    text-shadow: 0 0 5px #503502;
+    transition: 500ms;
+
 }
 
 .nav-link {
-    color: var(--text-light);
+    color: #084651;
     position: relative;
     transition: color 0.3s ease;
     display: flex;
