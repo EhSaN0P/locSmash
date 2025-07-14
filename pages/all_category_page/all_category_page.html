@@ -19,24 +19,29 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark px-4 mb-5 ">
+<nav class="navbar navbar-expand-lg navbar-dark px-4 ">
 
 
     <div class="collapse navbar-collapse " id="navbarNav">
         <div class="navbar-nav gap-4">
-            <a class="nav-link categoryLink" href="../all_category_page/all_category_page.html">دسته بندی ها</a>
+            <a class="nav-link categoryLink" href="#">دسته بندی ها</a>
             <a class="nav-link" href="../landing_page/LandingPage.html">خانه</a>
             <a class="nav-link" href="../bussinessRegistration_page/bussinessRegistration.html">ثبت بیزینس</a>
-            <a class="nav-link" href="../user_Registration_page/user_Registration.html">پروفایل</a>
+            <a class="nav-link d-lg-block d-none " href="../user_Registration_page/user_Registration.html">پروفایل</a>
         </div>
     </div>
-    <button class="navbar-toggler no-border p-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="نمایش/پنهان منو" >
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand animate__animated animate__infinite" href="#">LOCSMASH</a>
+    <div class="d-flex align-items-center d-lg-none" >
+        <button  class="navbar-toggler navbar-toggler-icon no-border p-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="نمایش/پنهان منو">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a  href="../user_Registration_page/user_Registration.html" class="text-white mx-4 mt-1">
+            <i style="color: #084651 !important;" class="fas fa-user fa-lg"></i>
+        </a>
+    </div>
+    <a class="navbar-brand animate__animated animate__infinite" href="#">MadiHub</a>
 </nav>
 
-<h2 class="category-title section-title animate__animated animate__fadeInDown">
+<h2 class="category-title section-title animate__animated animate__fadeInDown mt-5 mb-4">
     دسته بندی ها
     <span class="dot-yellow"></span>
 </h2>

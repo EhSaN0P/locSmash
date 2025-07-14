@@ -2,7 +2,7 @@
     direction: rtl;
 }
 .btn-primary-custom {
-    background:  var(--accent-yellow) !important;
+    background: #eda318 !important;
     color: var(--text-dark);
     font-weight: 700;
     border-radius: 40px;

@@ -3,21 +3,36 @@
     src: url('../node-modules/vazirmatn/fonts/ttf/Vazirmatn-Bold.ttf');
 
 }
+
+@font-face {
+    font-family:"Carter One" ;
+    src: url('../node-modules/carter_one/CarterOne-Regular.ttf');
+}
+
+  .carter-one-regular {
+      font-family: "Carter One";
+      font-weight: 700;
+      font-style: normal;
+
+  }
+
+
 :root {
     /*--primary-dark: #073642;*/
     /*--primary-mid: #0a9396;*/
     --primary-dark: #ffffff;
     --primary-mid: #ced8d8;
     --primary-light: #94d2bd;
-    --accent-yellow: #ee9b00;
+    --accent-yellow: #266d75;
     --text-dark: #001219;
     --text-light: #ffffff;
 }
 
 
 
+
 body {
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn';
     background: linear-gradient(135deg, var(--primary-dark), var(--primary-mid));
     color: var(--text-light);
     min-height: 100vh;
@@ -50,14 +65,14 @@ nav.navbar {
     letter-spacing: 0.1em;
     user-select: none;
     transition: 500ms;
-    text-shadow: 0 0 2px #000000;
+    text-shadow: 0 0 2px ;
+    font-family: 'Carter One';
 }
 
 
 .navbar-brand:hover {
     transform: scale(1.05) ;
     color: #e3ad33;
-    text-shadow: 0 0 5px #503502;
     transition: 500ms;
 
 }
