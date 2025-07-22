@@ -18,90 +18,123 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 </head>
 <body>
-<div class="business-box">
-    <div class="top-bar">
-        <button class="btn">←</button>
-        <img src="../../imgs/imgi_136_road220058.jpg">
-        <button class="btn">+</button>
-    </div>
 
-    <div class="business-info mb-1">
-        <div class="d-flex align-items-center gap-2">
-            <div class="logo-box"><img src="../../imgs/imgi_136_road220058.jpg" ></div>
-            <div class="rating-box">9.1/10</div>
-            <span class="text-light">#12</span>
+
+<main class="container " style="display:flex;flex-direction: column;align-items:center;justify-content: space-evenly;height: 100vh;">
+
+    <section class="top-info-con">
+
+        <div class="info-divs">
+                <img class="business_logo" src="../../imgs/imgi_136_road220058.jpg" alt="" >
+            <div class="business_Imdb">9 <span class="total_Imdb">/10</span></div>
         </div>
-        <div class="business-title " >نام بیزینس</div>
-    </div>
 
-    <p class="info-text p-3 ">آدرس: آدرس بیزینس ها به صورت کامل</p>
+        <div class="info-divs">
+           <button  class="rating_btn openRating">
+               <i  class="fa fa-star-o"></i>
+               ارزیابی
+           </button>
+            <h5 class="business_name">جمشید کبابی</h5>
+            <span class="rank">1#</span>
+        </div>
+    </section>
 
-    <!-- Swiper Card Stack Effect -->
-    <div class="swiper mySwiper  ">
+
+    <section class="top-info-con TIC-mobile">
+        <section>
+            <span class="rank">#1</span>
+            <div>
+                <div class="business_Imdb">9 <span class="total_Imdb">/10</span></div>
+
+                <button class="rating_btn openRating2">
+                    <i  class="fa fa-star-o"></i>
+                    ارزیابی
+                </button>
+            </div>
+        </section>
+        <section>
+            <h5 class="business_name">جمشید کبابی</h5>
+        </section>
+
+
+
+    </section>
+
+
+
+
+    <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"  ><img src="../../imgs/imgi_136_road220058.jpg"></div>
-            <div class="swiper-slide"  ><img src="../../imgs/imgi_210_mountains287618_1920.jpg"></div>
-            <div class="swiper-slide"  ><img src="../../imgs/imgi_136_road220058.jpg"></div>
-            <div class="swiper-slide"  ><img src="../../imgs/imgi_210_mountains287618_1920.jpg"></div>
-
+            <div class="swiper-slide"><img src="https://source.unsplash.com/400x300/?nature" /></div>
+            <div class="swiper-slide"><img src="https://source.unsplash.com/400x300/?city" /></div>
+            <div class="swiper-slide"><img src="https://source.unsplash.com/400x300/?technology" /></div>
+            <div class="swiper-slide"><img src="https://source.unsplash.com/400x300/?car" /></div>
+            <div class="swiper-slide"><img src="https://source.unsplash.com/400x300/?animal" /></div>
         </div>
+
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
 
-    <div class="mt-4 px-5">
-        <p class="text-start"><strong>توضیحات:</strong> صاحب بیزینس می‌تونه هر نکته/توضیح/تبلیغاتی اینجا بنویسه.</p>
-    </div>
-
-    <div class="nav-btns p-3">
-        <button class="btn"><a class="text-light text-decoration-none" href="#">موقعیت مکانی</a></button>
-        <button class="btn connectionBtn">راه های ارتباط</button>
-    </div>
-</div>
 
 
-<div class="connection-box p-3">
-    <h2 dir="rtl" class="h2 ">راه های ارتباطی</h2>
-    <section class=" row my-4 ">
-        <img  src="../../icons/Instagram_logo_2016.svg%201.jpg">
-        <p>@locsmah2923</p>
+    <section class="bottom-info-con">
+        <div class="info-divs">
+            <a class="btn  btn-outline-dark" href="#">ارتباط با بیزنس</a>
+            <a class="btn  btn-outline-primary "  href="#">موقعیت</a>
+        </div>
+        <p class="info-divs-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque enim esse et illo iusto molestias nam necessitatibus nulla perferendis qui, quo repudiandae, sapiente sunt tempore temporibus vero voluptatem voluptatum!</p>
     </section>
-    <section class=" row my-4">
-        <img  src="../../icons/3ab572be980a04dd90c24011ba0c6d6a-website-www-icon-stroke%201.png">
-        <p>https://www.google.co.uk/</p>
-    </section>
-    <section class=" row my-4">
-        <img  src="../../icons/free-phone-icon-1-thumb%201.png">
-        <p>021-22003223</p>
-    </section>
-    <div class="closeConn">X</div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
 
-    const swiper = new Swiper(".mySwiper", {
-        effect: "cards",
-        grabCursor: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
 
-</script>
+
+
+    <form class="overlay" id="ratingOverlay" action="#" method="POST">
+        <div class="rating-container">
+            <button class="close-btn" id="closeRating">×</button>
+
+            <!-- 👇 لوگو داخل قاب گرد -->
+            <div class="logo-box">
+                <img src="../../imgs/imgi_136_road220058.jpg" alt="لوگو">
+            </div>
+
+            <div class="rating-value" id="selectedRating"> :امتیاز </div>
+
+            <div class="rating-numbers">
+                <div class="rating-number">1</div>
+                <div class="rating-number">2</div>
+                <div class="rating-number">3</div>
+                <div class="rating-number">4</div>
+                <div class="rating-number">5</div>
+                <div class="rating-number">6</div>
+                <div class="rating-number">7</div>
+                <div class="rating-number">8</div>
+                <div class="rating-number">9</div>
+                <div class="rating-number">10</div>
+            </div>
+            <button type="submit" class="my-3 btn btn-warning">ثبت ارزیابی</button>
+        </div>
+    </form>
+
+
+
+</main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../../node-modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../node-modules/jquery/dist/jquery.min.js"></script>
     <script src="../../SRC/primary.js"></script>
     <script src="../../JS/detailed_page.js"></script>
-<script src="../../JS/wow.min.js"></script>
-<script>
-    window.addEventListener('wheel', e => { if (e.ctrlKey) e.preventDefault(); }, { passive: false });
-    window.addEventListener('touchstart', e => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
-    window.addEventListener('gesturestart', e => e.preventDefault());
-</script>
+    <script src="../../JS/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
 </body>
 </html>

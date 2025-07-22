@@ -1,0 +1,25 @@
+.sidebar {
+    min-height: 100vh;
+    background-color: #343a40;
+}
+.sidebar .nav-link {
+    color: #fff !important;
+    margin-bottom: 1rem;
+}
+.sidebar .nav-link.active {
+    background-color: #495057;
+    border-radius: 10px;
+}
+.card {
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.02);
+}
+.card.accepted {
+    border: 2px solid #198754;
+}
+.card.rejected {
+    border: 2px solid #dc3545;
+}
+
