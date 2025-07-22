@@ -415,7 +415,7 @@ progress::-webkit-progress-value{
 }
 
 .showStepName{
-    color: #ffffff;
+    color: #000000;
     position: absolute;
     bottom: -2rem;
     text-wrap: nowrap;
@@ -769,7 +769,7 @@ select.form-select option:hover {
 
 }
 .mapInfo{
-    height: 100%;
+    height: auto;
     width: 50%;
     padding: 1rem;
 
@@ -787,6 +787,10 @@ select.form-select option:hover {
 }
 
 
+#address{
+    height: 10vh !important;
+    margin-top: 1rem;
+}
 
 
 .button-group a{
@@ -1026,9 +1030,10 @@ select.form-select option:hover {
         opacity: 0.5;
     }
 
-    #address{
-        height: 10vh !important;
-    }
+
+    select[name="city_select"]{
+    height: 3rem !important;
+}
 
     .contact-support{
         transform: translateY(0rem);
@@ -1057,7 +1062,8 @@ select.form-select option:hover {
     }
 
    #address{
-       height: 25vh !important;
+       height: 13vh !important;
+       margin-top: 1rem;
    }
     #tab3 {
         height:  fit-content !important;

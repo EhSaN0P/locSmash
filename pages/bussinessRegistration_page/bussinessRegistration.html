@@ -147,7 +147,7 @@
                 <div class="form-group">
                     <label class="form-label">دسته بندی</label>
 
-                    <select class="form-select " required >
+                    <select class="form-select " name="category-select" required >
                         <option value="" disabled selected hidden>انتخاب کنید</option>
                         <option value="option1">گزینه ۱</option>
                         <option value="option2">گزینه ۲</option>
@@ -171,6 +171,12 @@
 
         <section class="d-flex">
             <article class="mapInfo" >
+                <select class="form-control " name="city_select" required >
+                    <option value="" disabled selected hidden>انتخاب کنید</option>
+                    <option value="city1">تهران</option>
+                    <option value="city2">اصفهان</option>
+                    <option value="city3">مشهد</option>
+                </select>
                 <textarea type="text" id="address" placeholder="آدرس انتخاب‌شده اینجاست..." style="height: 10rem;" required class="form-control" rows="3" placeholder="اینجا می‌تونید چند خط بنویسید..."></textarea>
                 <input  required name="detailed-address" class="form-control" type="text" id="detailed-address" placeholder="پلاک،زنگ و...." style="height: 5rem;margin-top: 2rem" />
 
