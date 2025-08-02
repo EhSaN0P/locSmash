@@ -182,7 +182,8 @@
 }
 
 .category-title{
-    text-shadow: 0 0 5px #34485d;
+    text-shadow: 0 0 4px #000000;
+    color: #ffffff;
 }
 
 /* واکنش‌گرا */
